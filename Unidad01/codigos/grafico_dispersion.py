@@ -1,5 +1,3 @@
-# @title
-# 2. Realice un diagrama de dispersión para estos datos.
 import matplotlib.pyplot as plt
 
 # --- Configuración general del gráfico ---
@@ -19,34 +17,21 @@ plt.scatter(
     label='Gastos Generales' # etiqueta para la leyenda
 )
 
-# --- Gráfico de línea ---
-# plt.plot(
-#     x, y,
-#     color='orange',   # color de la línea
-#     linewidth=2.2,        # grosor de la línea
-#     linestyle='-',        # estilo de línea
-#     marker='o',           # marcador en cada punto
-#     markersize=5,         # tamaño del marcador
-#     markerfacecolor='white',
-#     markeredgecolor='black',
-#     label='Datos observados'
-# )
-
 # --- Título ---
 plt.title(
-    'Gráfico de dispersión entre unidades y gastos generales',
+    'Gráfico de dispersión',
     fontsize=14,
     fontweight='bold'
 )
 
 # --- Etiquetas de los ejes ---
 plt.xlabel(
-    'Unidades producidas',
+    '',
     fontsize=12
 )
 
 plt.ylabel(
-    'Gastos generales',
+    '',
     fontsize=12
 )
 
@@ -58,9 +43,6 @@ plt.yticks(fontsize=10)
 plt.margins(x=0.05, y=0.05)  # espacio extra alrededor de los datos
 plt.gca().spines['right'].set_visible(False) # derecha
 plt.gca().spines['top'].set_visible(False)   # superior
-
-# Para eliminar márgenes completamente, usar:
-# plt.margins(0)
 
 # --- Cuadrícula (opcional, pero didáctica) ---
 plt.grid(
@@ -81,7 +63,7 @@ plt.legend(
 # --- Nota al pie ---
 plt.text(
     0.4, -0.2,
-    'Fuente: datos simulados para fines académicos.',
+    '',
     fontsize=8,
     ha='left',
     va='center',
@@ -90,7 +72,7 @@ plt.text(
 
 # --- Guardar gráfico ---
 plt.savefig(
-    "grafico de dispersión",
+    "grafico_dispersion.png",
     bbox_inches='tight'
     )
 
