@@ -14,7 +14,7 @@ plt.scatter(
     edgecolor='black',    # borde de los puntos
     alpha=0.8,            # transparencia
     s=30,                 # tamaño de los puntos
-    label='Gastos Generales (residuales)' # etiqueta para la leyenda
+    label='Residuales' # etiqueta para la leyenda
 )
 
 plt.axhline(
