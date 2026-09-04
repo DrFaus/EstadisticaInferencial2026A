@@ -1,5 +1,3 @@
-# @title
-# 2. Realice un diagrama de dispersión para estos datos.
 import matplotlib.pyplot as plt
 
 # --- Configuración general del gráfico ---
