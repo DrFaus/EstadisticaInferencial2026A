@@ -39,7 +39,7 @@ plt.xlabel(
 )
 
 plt.ylabel(
-    'Gastos generales',
+    '',
     fontsize=12
 )
 
